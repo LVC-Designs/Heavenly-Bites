@@ -1,0 +1,297 @@
+/* Color Palette */
+:root {
+    --color-1: #ffe4e8; /* Lightest pink */
+    --color-2: #ffc9d3;
+    --color-3: #ffaec0;
+    --color-4: #ff93ad;
+    --color-5: #ff789a; /* Darkest pink */
+    --text-dark: #333;
+    --text-light: #fff;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-1);
+    color: var(--text-dark);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header Styles */
+header {
+    background: var(--color-5);
+    color: var(--text-light);
+    padding: 1rem 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.left-menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.left-menu ul li {
+    margin-right: 1rem;
+}
+
+.left-menu ul li a {
+    color: var(--text-light);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+}
+
+.left-menu ul li a:hover {
+    background-color: var(--color-4);
+    border-radius: 5px;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+.right-menu select {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color-4);
+    color: var(--text-light);
+    cursor: pointer;
+}
+
+/* Main Content Styles */
+main {
+    padding-top: 80px; /* To account for fixed header */
+}
+
+section {
+    padding: 2rem 0;
+}
+
+h2 {
+    color: var(--color-5);
+    border-bottom: 2px solid var(--color-5);
+    padding-bottom: 0.5rem;
+}
+
+.product-category {
+    background: var(--text-light);
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 120, 154, 0.2);
+}
+
+.product-category h3 {
+    color: var(--color-4);
+}
+
+/* Footer Styles */
+footer {
+    background: var(--color-3);
+    color: var(--text-dark);
+    text-align: center;
+    padding: 1rem 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.contact-form-container {
+    background-color: var(--color-2);
+    padding: 2rem;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-dark);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.5rem;
+    border: 1px solid var(--color-4);
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    height: 150px;
+}
+
+.submit-btn {
+    background-color: var(--color-5);
+    color: var(--text-light);
+    border: none;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+/* Welcome Section Styles */
+.welcome-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: var(--color-2);
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 120, 154, 0.2);
+    display: flex;
+    align-items: flex-start;
+}
+
+.welcome-image {
+    flex: 0 0 40%;
+    padding-right: 20px;
+}
+
+.owners-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.welcome-text {
+    flex: 0 0 60%;
+}
+
+.welcome-text p {
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.welcome-text p:last-child {
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .welcome-content {
+        flex-direction: column;
+    }
+
+    .welcome-image, .welcome-text {
+        flex: 0 0 100%;
+    }
+
+    .welcome-image {
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+}
+
+
+
+
+.submit-btn:hover {
+    background-color: var(--color-4);
+}
+
+.contact-form-container {
+    background-color: var(--color-1); /* Lightest pink */
+    padding: 20px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.contact-form-container h2 {
+    color: var(--color-5); /* Darkest pink */
+    border-bottom: 1px solid var(--color-5);
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}
+
+#contactForm label {
+    display: block;
+    margin-bottom: 5px;
+    color: var(--color-5);
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+    border: 1px solid var(--color-4);
+    background-color: white;
+}
+
+#contactForm textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: var(--color-4);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    float: right;
+}
+
+.submit-btn:hover {
+    background-color: var(--color-5);
+}
+
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .left-menu ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-menu ul li {
+        margin: 0.5rem 0;
+    }
+
+    .logo {
+        margin: 1rem 0;
+    }
+
+    .right-menu {
+        margin-top: 1rem;
+    }
+
+
+
+
+}
